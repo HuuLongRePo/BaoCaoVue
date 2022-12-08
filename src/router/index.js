@@ -8,40 +8,77 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+      meta:{
+        layout:"User"
+      }
     },
     {
       path: "/about",
       name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/AboutView.vue"),
+      meta:{
+        layout:"User"
+      }
     },
     {
       path: "/lifecycle",
       name: "lifecycle",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../components/LearnVue/LifecycleHook.vue"),
+      component: () => import("../views/LearnVue/LifecycleHook.vue"),
+      meta:{
+        layout:"User"
+      }
     },
     {
       path: "/scopecss",
       name: "scopecss",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../components/LearnVue/ScopeCss.vue"),
+      component: () => import("../views/LearnVue/ScopeCss.vue"),
+      meta:{
+        layout:"User"
+      }
     },
     {
       path: "/mecoda",
       name: "mecoda",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../components/LearnVue/MeCoDa.vue"),
+      component: () => import("../views/LearnVue/MeCoDa.vue"),
+      meta:{
+        layout:"User"
+      }
+    },
+    {
+      path: "/databinding",
+      name: "databinding",
+      component: () => import("../views/LearnVue/DataBinding.vue"),
+      meta:{
+        layout:"User"
+      }
+    },
+    {
+      path: "/eventkey",
+      name: "eventkey",
+      component: () => import("../views/LearnVue/EventKey.vue"),
+      meta:{
+        layout:"User"
+      }
+    },
+    {
+      path: "/propsemit",
+      name: "propsemit",
+      component: () => import("../views/LearnVue/PropsEmit.vue"),
+      meta:{
+        layout:"User"
+      }
+    },
+    {
+      path: "/routerslot",
+      name: "routerslot",
+      component: () => import("../views/LearnVue/RouterSlot.vue"),
+      meta:{
+        layout:"Blank"
+      }
     },
   ],
 });
+
+
 
 export default router;

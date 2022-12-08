@@ -3,5 +3,5 @@
 </script>
 
 <template>
- Hello Wwelcome
+ Hello Welcome
 </template>
