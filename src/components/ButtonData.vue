@@ -6,6 +6,8 @@
 <script>
 
 
+
+
 export default {
     data() {
         return {
@@ -15,8 +17,13 @@ export default {
     computed: {
         counts: function () {
             console.log(`${this.count} ở data`);
-            // this.count = localStorage.storedData
-            console.log(`${this.count} ở computed`);
+            console.log(localStorage.storedData);
+            if(localStorage.storedData){
+                this.count = Number(localStorage.storedData)
+            }else{
+                console.log(`${this.count} ở computed`);
+            return this.count
+            }
             return this.count
         }
     },
@@ -25,7 +32,6 @@ export default {
             // this.count = localStorage.storedData
             this.count++
             console.log(`${this.count} ở methods`);
-
             localStorage.storedData = this.count;
             return this.count
         }

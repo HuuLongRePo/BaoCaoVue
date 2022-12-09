@@ -12,7 +12,10 @@
             <li>@keypress bỏ qua delete, arrows, page up, page down, home, end, ctrl, alt, shift, esc, v.v.</li>
             <li>Sự kiện keydownvà keypresskích hoạt nhiều lần nếu người dùng nhấn và giữ một phím. Trong khi keyupchỉ kích hoạt một lần khi người dùng nhả phím.</li>
         </ul>
-        <input @keypress.delete="onEvent" @click="onEvent" placeholder="click vào đây!"/>
+        <input @keyup.enter="onEvent"  placeholder="enter và nhả tại đây!"/>
+        <input @keydown="onEvent"  placeholder="enter vào đây!"/>
+        <input @keypress.enter="onEvent" @keypress.delete="onEvent" placeholder="delete không Enter có!"/>
+        <input @click="onEvent" placeholder="click vào đây!"/>
     </div>
 
 </template>
@@ -25,7 +28,7 @@ export default {
     },
     methods:{
         onEvent(){
-            alert('click')
+            alert('Kích hoạt sự kiện!')
         }
     }
 }
