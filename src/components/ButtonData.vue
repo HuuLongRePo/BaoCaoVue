@@ -15,7 +15,7 @@ export default {
     computed: {
         counts: function () {
             console.log(`${this.count} ở data`);
-            this.count = localStorage.storedData
+            // this.count = localStorage.storedData
             console.log(`${this.count} ở computed`);
             return this.count
         }

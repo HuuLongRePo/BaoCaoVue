@@ -21,7 +21,7 @@
                 performance và ta cần nghĩ đến dùng v-if
             </li>
         </ul>
-
+        <VshowVif />
         <h3>Ngoài ra còn có V-ElSE và V-ELSE-IF</h3>
         <ul>
             <li>v-else-if kiểm tra, ràng buộc thêm điều kiện và đưa thực hiện chức năng cho từng điều kiện </li>
@@ -74,6 +74,8 @@
 
 </template>
 <script>
+import VshowVif from '../Example/VshowVif.vue';
+
 
 
 export default {
@@ -86,12 +88,12 @@ export default {
             codemau4: '<textarea rows="1" cols="100" disabled><div v-bind:style="[baseStyles, overridingStyles]"></div></textarea>',
             codemau5: '<textarea rows="9" cols="100" disabled><template v-if="loginType === \'username\'">\n <label>Username</label>\n  <input placeholder="Nhập username" \n key="username-input">\n</template>\n<template v-else>\n  <label>Email</label>\n  <input placeholder="Nhập địa chỉ email" key="email-input">\n</template></textarea>',
             codemau6: '<textarea rows="5" cols="100" disabled><div v-for="item in items" :key="item.id">\n  <li v-for="todo in todos" v-if="!todo.isComplete">\n    {{ todo }}\n  </li>\n</div></textarea>',
-            message:''
+            message: ''
 
         }
     },
     components: {
-
+        VshowVif
     }
 }
 </script>

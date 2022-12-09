@@ -90,26 +90,26 @@
 </template>
 <script >
 
-const abc = new Promise(function (resolve, reject) {
+// const abc = new Promise(function (resolve, reject) {
 
-    setTimeout(() => reject('How are you'), 1000); // (*)
+//     setTimeout(() => reject('How are you'), 1000); // (*)
 
-}).then(function (result) { // (**)
+// }).then(function (result) { // (**)
 
-    alert(result);
-    return 'I\'m fine thank!';
+//     alert(result);
+//     return 'I\'m fine thank!';
 
-}).then(function (result) { // (**)
+// }).then(function (result) { // (**)
 
-    alert(result);
-    return 'Opps!';
+//     alert(result);
+//     return 'Opps!';
 
-})
+// })
 
-abc.then(function (result) { // (**)
+// abc.then(function (result) { // (**)
 
-    alert("avbafdsfasdfasdfdasf")
-    return 'Opps!';
+//     alert("avbafdsfasdfasdfdasf")
+//     return 'Opps!';
 
-})
+// })
 </script>
