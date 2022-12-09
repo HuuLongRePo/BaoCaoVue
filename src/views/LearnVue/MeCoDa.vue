@@ -10,6 +10,7 @@
         </ul>
         <h3>Computed</h3>
         <ul>
+            <li>Dùng để xử lý các biểu thức phức tạp thay vì viết trực tiếp vào property {{}} trong template</li>
             <li>Computed sẽ tính toán lại mỗi khi các biến phụ thuộc trong nó thay đổi</li>
             <li>Tận dụng computed để tính toán các dữ liệu có sẵn thì sẽ cải thiện được performance app</li>
             <li>Computed ta không được thêm cặp dấu () đằng sau khi gọi ra nội suy {{ }}, tức là computed cũng không thể

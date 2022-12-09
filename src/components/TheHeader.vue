@@ -1,30 +1,32 @@
 <template>
-    <div>
-        <header>
-            <div class="wrapper">
-                <HelloWorld msg="Báo cáo!" />
-                <nav>
-                    <RouterLink to="/">Home</RouterLink>
-                    <RouterLink to="/about">About</RouterLink>
-                    <RouterLink to="/lifecycle">LifCycle Hook</RouterLink>
-                    <RouterLink to="/scopecss">Scope CSS</RouterLink>
-                    <RouterLink to="/mecoda">MeCoDa</RouterLink>
-                    <RouterLink to="/databinding">Data Binding</RouterLink>
-                    <RouterLink to="/eventkey">Event Key</RouterLink>
-                    <RouterLink to="/propsemit">Props Emit</RouterLink>
-                    <RouterLink to="/routerslot">Router Slot</RouterLink>
-                </nav>
-            </div>
-        </header>
+  <div>
+    <header>
+      <div class="wrapper">
+        <HelloWorld msg="Báo cáo!" />
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/lifecycle">LifCycle Hook</RouterLink>
+          <RouterLink to="/scopecss">Scope CSS</RouterLink>
+          <RouterLink to="/mecoda">MeCoDa</RouterLink>
+          <RouterLink to="/databinding">Data Binding</RouterLink>
+          <RouterLink to="/eventkey">Event Key</RouterLink>
+          <RouterLink to="/propsemit">Props Emit</RouterLink>
+          <RouterLink to="/watchref">WatchRef</RouterLink>
+          <RouterLink to="/routerslot">Router Slot</RouterLink>
+          <RouterLink to="/jsview">JavaScript</RouterLink>
 
-        <!-- HEADER -->
-    </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HEADER -->
+  </div>
 </template>
 <script>
 import { RouterLink } from "vue-router";
 import HelloWorld from "./HelloWorld.vue";
 export default {
-    components: { HelloWorld }
+  components: { HelloWorld }
 }
 </script>
 <style scoped>
@@ -60,9 +62,10 @@ nav a:first-of-type {
   padding: 0 1rem 0 0;
 
 }
+
 nav a:last-of-type {
-  border: 0;
-  padding: 0 0 1rem 0;
+  border: 0 1rem;
+  /* padding: 0 0 1rem 0; */
 
 }
 </style>

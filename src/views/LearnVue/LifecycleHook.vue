@@ -20,6 +20,13 @@
       <li>beforeDestroy -> beforeUnmoute và onBeforeUnmoute</li>
       <li>destroyed -> unMouted và onUnMounted</li>
     </ul>
+    <h3>Đối với setup</h3>
+    <ul>
+      <li>Nếu viết setup() trong export default thì cần có return những biến và hàm đã khai báo</li>
+      <li>Nếu viết setup trong &lt;script setup &gt; &lt;/script&gt; thì không cần return mà gọi sử dụng bình thường</li>
+      <li>Data khai báo với ref() hoặc reactive() đối với object để đảm bảo được tính phản ứng của dữ liệu </li>
+      <li>Khi dùng ref, reactive hay onMounted,onBeforeMount,watchEffect hoặc watch tại &lt;script setup &gt; &lt;/script&gt; ta cần import {} from "vue"</li>
+    </ul>
   </div>
 </template>
 

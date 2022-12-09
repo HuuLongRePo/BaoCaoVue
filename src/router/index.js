@@ -13,9 +13,9 @@ const router = createRouter({
       }
     },
     {
-      path: "/about",
-      name: "about",
-      component: () => import("../views/AboutView.vue"),
+      path: "/jsview",
+      name: "jsview",
+      component: () => import("../views/JsView.vue"),
       meta:{
         layout:"User"
       }
@@ -74,6 +74,14 @@ const router = createRouter({
       component: () => import("../views/LearnVue/RouterSlot.vue"),
       meta:{
         layout:"Blank"
+      }
+    },
+    {
+      path: "/watchref",
+      name: "watchref",
+      component: () => import("../views/LearnVue/WatchRef.vue"),
+      meta:{
+        layout:"User"
       }
     },
   ],
